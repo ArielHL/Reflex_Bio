@@ -5,6 +5,7 @@ from own.styles.colors import TextColor as TextColor
 import own.constants as const
 from own.components.ant_components import float_button
 from own.components.float_button import custom_float_button
+from own.utils import logo
 
 
 year = datetime.datetime.today().year
@@ -14,14 +15,14 @@ def footer() -> rx.Component:
 
                 rx.chakra.flex(
                     rx.chakra.image(
-                            src='/images/DeepBlueLogo.png',
+                            src=logo,
                             height=styles.Size.VERY_BIG.value,
                             weight=styles.Size.VERY_BIG.value,       
                             alt='Logotipo de Ariel Limes' 
                             ),
                     rx.chakra.vstack(
                         rx.chakra.link(
-                                f'© 2014-{year} DEEPBLUE BY Ariel Limes V3.',
+                                f'© 2014-{year} XXXX of yyyyyy.',
                                 href="",
                                 is_external=True,
                                 font_size=styles.Size.DEFAULT.value,
@@ -35,7 +36,7 @@ def footer() -> rx.Component:
                                     weight=styles.Size.LARGE.value,
                                 ),        
                                 rx.chakra.text(
-                                    'Building Software with ♥ from Madrid to the World.',
+                                    'Building Software to the World.',
                                     font_size=styles.Size.DEFAULT.value,
                                     margin_top=styles.Size.ZERO.value,
                                     color=TextColor.BODY.value,

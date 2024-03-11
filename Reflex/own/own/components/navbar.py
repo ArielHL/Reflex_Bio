@@ -4,6 +4,7 @@ from own.styles.colors import TextColor as TextColor
 from own.styles.colors import Color as Color
 from own.routes import Route
 from own.components.ant_components import float_button
+from own.utils import logo
 
 
 
@@ -12,18 +13,18 @@ def navbar(live:bool=False) -> rx.Component:
                 rx.chakra.link(
                     rx.chakra.hstack(
                         rx.chakra.avatar(
-                            name="Ariel Limes",
+                            name="Your Names",
                             size="md",
                             color=TextColor.BODY.value,
                             bg=Color.CONTENT.value,
-                            src='/images/DeepBlueLogo.png',
+                            src=logo,
                             padding='2px',
                             border="2px solid",
                             border_color=Color.PRIMARY.value,
                             margin_right=styles.Size.VERY_SMALL.value,
                             ),
-                        rx.chakra.span('Ariel',color=Color.PRIMARY.value),
-                        rx.chakra.span('Limes',color=Color.PRIMARY.value),
+                        rx.chakra.span('Your',color=Color.PRIMARY.value),
+                        rx.chakra.span('Name',color=Color.PRIMARY.value),
                         style=styles.navbar_title_style,
                         
                     ),

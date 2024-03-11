@@ -6,7 +6,7 @@ def lang() -> rx.Component:
 
 
 preview = ""
-logo = "/icons/favicon.ico"
+logo = "/icons/Logo.webp"
     
 _meta = [
     {"name": "og:type", "content": "website"},

@@ -5,7 +5,7 @@ import time
 class ImageSwapState(rx.State):
     # image setting
     gpt_image: str = '/images/ahl_avatar_gpt.webp'
-    orig_image: str = '/images/ahl_avatar.jpeg'
+    orig_image: str = '/images/almost_me_2.png'
     active_src: str = gpt_image
     
     # message setting

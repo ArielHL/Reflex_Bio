@@ -44,14 +44,14 @@ def header (details=True) -> rx.Component:
                             ),
                             rx.chakra.flex(
                                 rx.chakra.heading(
-                                    "Ariel Limes",
+                                    "Your Name",
                                     size='lg',
                                     on_click=ColorState.next_color,
                                     color=ColorState.color,
                                     _hover={"cursor": "pointer"}
                                 ),
                                 rx.chakra.text(
-                                    "@arielimes",
+                                    "@yourname",
                                     margin_top=styles.Size.ZERO.value,
                                     color=Color.PRIMARY.value,
                                 ),
@@ -117,9 +117,10 @@ def header (details=True) -> rx.Component:
                                 title('{ Self: About Me }'),
                                 rx.chakra.text(
                                     f"""
-                                    I am a professional in Data Science with {experience_finance()} years of experience in Finance and {experience_data()} years in Data Science. 
-                                    Currently, I work as a freelance full-stack developer in ReactJS, Node.JS, Django, and Reflex. 
-                                    As well as a Data Scientist in Machine Learning and Deep Learning projects, mainly in NLP.
+                                    I am a Data Scientist with a background in Finance.
+                                    I have a passion for solving complex problems and
+                                    making data-driven decisions. I have a strong
+                                    understanding of statistical and machine learning   
                                     """,
                                     color=TextColor.BODY.value,
                                     font_size=styles.Size.DEFAULT.value,
