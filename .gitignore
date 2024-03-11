@@ -1,0 +1,9 @@
+*.db
+*.py[cod]
+.env
+.web
+.web/
+**/__pycache__/
+*.PYC
+testing/
+.vscode/
